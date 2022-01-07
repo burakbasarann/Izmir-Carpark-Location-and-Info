@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Izmir_Otopark_Lokasyon</string>
+    <string name="title_activity_fiyatlandirma">FiyatlandirmaActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="otoparkhakkinda">  Belediyemiz eğitimli ve deneyimli personeli ile çağdaş şehircilik anlayışıyla kentlinin kolaylıkla yararlanacağı biçimde düzenlenen otoparkların işletmeciliğini yürütmektedir. Şehrimizde otopark hizmetleri; kapalı alan otoparkları, açık alan otoparkları ve Mustafa Kemal Sahil Bulvarı abone otoparkları olmak üzere üç ana grupta toplanmaktadır. Kent içinde açık alan otoparklarda 3.387, kapalı alan otoparklarda 8.428, Mustafa Kemal Sahil Bulvarı abone otoparklarında 1.955 olmak üzere, toplam 13.770 adet araç park yeri bulunmaktadır.</string>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>
