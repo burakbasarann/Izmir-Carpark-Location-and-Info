@@ -4,38 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <LinearLayout
-        android:id="@+id/usttaraf"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="12dp"
-        android:gravity="center"
-        android:background="#5693AF"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:id="@+id/img1"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/otopark"/>
-
-        <TextView
-            android:id="@+id/txt1"
-            android:layout_width="wrap_content"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:textColor="@color/black"
-            android:fontFamily="sans-serif-black"
-            android:text="İzmir Otoparklar ve Lokasyonları"
-            android:textSize="18sp" />
-
-    </LinearLayout>
+    tools:context=".MainActivity"
+    android:background="@color/arkaplan">
 
     <Button
         android:id="@+id/btncarparklist"
@@ -51,8 +21,8 @@
         android:id="@+id/btnfiyatlandirma"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ücretler"
         android:layout_margin="12dp"
+        android:text="Ücretler"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btncarparklist"
         app:layout_constraintStart_toStartOf="parent" />
@@ -61,10 +31,10 @@
         android:id="@+id/anasayfaRV"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="28dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/usttaraf">
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
     </androidx.recyclerview.widget.RecyclerView>
 
@@ -72,6 +42,7 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/black"
         android:layout_margin="5dp"
         android:layout_marginTop="4dp"
         android:text="@string/otoparkhakkinda"
@@ -87,10 +58,39 @@
         android:text="Hakkımızda"
         android:textSize="15sp"
         android:textStyle="bold"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/anasayfaRV" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/anaRenk"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_baseline_directions_car_24"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/pacifico"
+            android:text="İzmir Otopark"
+            android:textColor="@color/yaziRenk1"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="146dp"
+            tools:layout_editor_absoluteY="14dp" />
+    </androidx.appcompat.widget.Toolbar>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

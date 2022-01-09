@@ -8,4 +8,10 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="anaRenk">#CB2020</color>
+    <color name="koyuAnaRenk">#BF2020</color>
+    <color name="yaziRenk1">#FFFFFF</color>
+    <color name="yaziRenk2">#636363</color>
+    <color name="arkaplan">#FBFBFB</color>
 </resources>
